@@ -22,4 +22,25 @@ public class MarshmallowMonster
 		this.percentOfRibbon = 0.9;
 		this.percentOfCute = 99.999;
 	}
+
+public MarshmallowMonster(String name, int legCount, int spookylegCount, boolean hasTail, boolean hasMouth, double percentOfRibbon, double percentOfCute)
+{
+	this.name = name;
+	this.legCount = legCount;
+	this.spookylegCount = spookylegCount;
+	this.hasTail = hasTail;
+	this.hasMouth = hasMouth;
+	this.percentOfRibbon = percentOfRibbon;
+	this.percentOfCute = percentOfCute;
+}
+
+public String toString()
+{
+	String description = "I am a monster!";
+	description += "\n";
+	description += "My name is " + name + "\n";
+	description += "I have: " + legCount + " legs!";
+	description += "I have " + spookylegCount + " spooky legs!";
+	return description;
+}
 }
