@@ -6,7 +6,7 @@ public class Controller
 	
 	public Controller()
 	{
-		
+		this.basicMonster = new MarshmallowMonster();
 	}
 	public void start()
 	{
