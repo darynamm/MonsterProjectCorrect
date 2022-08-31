@@ -7,11 +7,19 @@ public class MarshmallowMonster
 	private String name;
 	private int legCount;
 	private int spookylegCount;
-	private int eyeCount;
-	private int earCount;
 	private boolean hasTail;
-	private boolean hasNose;
 	private boolean hasMouth;
 	private double percentOfRibbon;
 	private double percentOfCute;
+	
+	public MarshmallowMonster()
+	{
+		this.name = "Celia";
+		this.legCount = 4;
+		this.spookylegCount = 2;
+		this.hasTail = true;
+		this.hasMouth = true;
+		this.percentOfRibbon = 0.9;
+		this.percentOfCute = 99.999;
+	}
 }
