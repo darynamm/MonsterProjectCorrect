@@ -13,12 +13,35 @@ public class Controller
 	public void start()
 	{
 		System.out.println("i made a monster!");
+
+		useGetters();
+		useSetters();
+
+	}
+	
+	private void useGetters()
+	{
 		System.out.println("The basic mosnter name is: " + basicMonster.getName() + " i have so many legs - a whole " + basicMonster.getlegCount() + ", also i have " + basicMonster.getspookylegCount() + " spooky legs! do i have a tail????" + basicMonster.gethasTail());
 		System.out.println("The percentage of how cute I am is " + basicMonster.getpercentOfCute());
 		System.out.println("The fact that i have a mouth is " + basicMonster.gethasMouth());
 		System.out.println("The percent of how much ribbon I have is " + basicMonster.getpercentOfRibbon());
 		System.out.println(myMonster);
-		
-
 	}
+	private void useSetters()
+	{
+		System.out.println("The name is currently : " + myMonster.getName());
+		String betterName = "Harlow Lux";
+		myMonster.setName(betterName);
+		System.out.println("The name is now: " + myMonster.getName());
+		System.out.println("The leg count is " + myMonster.getlegCount());
+		int betterlegCount = 9;
+		myMonster.setlegCount(betterlegCount);
+		System.out.println("The leg count now is: " + myMonster.getlegCount());
+		System.out.println("The percent of ribbon is currently: " + myMonster.getpercentOfRibbon());
+		double betterRibbon = 88.88;
+		myMonster.percentOfRibbon(betterRibbon);
+		System.out.println("The name is now: " + myMonster.getpercentOfRibbon());
+		
+	}
+
 }

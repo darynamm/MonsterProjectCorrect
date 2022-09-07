@@ -77,4 +77,24 @@ public double getpercentOfCute()
 {
 	return this.percentOfCute;
 }
+public void setName(String name)
+{
+	this.name = name;
+}
+public void setlegCount(int legCount)
+{
+	this.legCount = legCount;
+}
+public void setspookylegCount(int spookylegCount)
+{
+	this.spookylegCount = spookylegCount;
+}
+public void sethasMouth(boolean hasMouth)
+{
+	this.hasMouth = hasMouth;
+}
+public void percentOfRibbon(double percentOfRibbon)
+{
+	this.percentOfRibbon = percentOfRibbon;
+}
 }
