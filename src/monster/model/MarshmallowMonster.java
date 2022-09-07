@@ -56,8 +56,25 @@ public int getlegCount()
 {
 	return this.legCount;
 }
-public int spookylegCount()
+public int getspookylegCount()
 {
 	return this.spookylegCount;
+}
+public boolean gethasTail()
+{ 
+	return this.hasTail;
+}
+public boolean gethasMouth()
+{
+	return this.hasMouth;
+}
+public double getpercentOfRibbon()
+{
+	return this.percentOfRibbon;
+	
+}
+public double getpercentOfCute()
+{
+	return this.percentOfCute;
 }
 }
