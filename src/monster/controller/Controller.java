@@ -13,7 +13,7 @@ public class Controller
 	public void start()
 	{
 		System.out.println("i made a monster!");
-		System.out.println(basicMonster);
+		System.out.println("The basic mosnter name is: " + basicMonster.getName() + "i have " + basicMonster.getlegCount());
 		System.out.println(myMonster);
 	}
 }

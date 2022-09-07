@@ -35,6 +35,8 @@ public MarshmallowMonster(String name, int legCount, int spookylegCount, boolean
 }
 
 public String toString()
+
+
 {
 	String description = "I am a monster!";
 	description += "\n";
@@ -42,5 +44,20 @@ public String toString()
 	description += "I have: " + legCount + " legs!";
 	description += "I have " + spookylegCount + " spooky legs!";
 	return description;
+}
+
+
+public String getName()
+{
+	return this.name;
+	
+}
+public int getlegCount()
+{
+	return this.legCount;
+}
+public int spookylegCount()
+{
+	return this.spookylegCount;
 }
 }
