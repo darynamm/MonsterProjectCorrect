@@ -37,11 +37,20 @@ public class Controller
 		int betterlegCount = 9;
 		myMonster.setlegCount(betterlegCount);
 		System.out.println("The leg count now is: " + myMonster.getlegCount());
+		int betterspookylegCount = 100;
+		myMonster.setspookylegCount(betterspookylegCount);
+		System.out.println("The spooky leg count is " + myMonster.getspookylegCount());
 		System.out.println("The percent of ribbon is currently: " + myMonster.getpercentOfRibbon());
-		double betterRibbon = 88.88;
-		myMonster.percentOfRibbon(betterRibbon);
-		System.out.println("The name is now: " + myMonster.getpercentOfRibbon());
 		
+		double betterRibbon = 88.88;
+		myMonster.setpercentOfRibbon(betterRibbon);
+		System.out.println("The name is now: " + myMonster.getpercentOfRibbon());
+		boolean betterhasTail = true;
+		myMonster.sethasTail(betterhasTail);
+		System.out.println("The fact that the monste now has a tail is " + myMonster.gethasTail());
+		boolean betterhasMouth = false;
+		myMonster.sethasTail(betterhasMouth);
+		System.out.println("The fact that the monste now has a tail is " + myMonster.gethasMouth());
 	}
 
 }

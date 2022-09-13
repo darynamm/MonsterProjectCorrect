@@ -88,12 +88,18 @@ public void setlegCount(int legCount)
 public void setspookylegCount(int spookylegCount)
 {
 	this.spookylegCount = spookylegCount;
+	
+
+}
+public void sethasTail(boolean hasTail)
+{
+	this.hasTail = hasTail;
 }
 public void sethasMouth(boolean hasMouth)
 {
 	this.hasMouth = hasMouth;
 }
-public void percentOfRibbon(double percentOfRibbon)
+public void setpercentOfRibbon(double percentOfRibbon)
 {
 	this.percentOfRibbon = percentOfRibbon;
 }
