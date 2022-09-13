@@ -61,9 +61,10 @@ public class MarshmallowMonsterTest
 			if (currentMethod.getName().indexOf("set") == 0)
 			{
 				setterCount++;
+				assertTrue(currentMethod.getParameterCount() == 1, "All setters have exactly 1 parameter");
 			}
 			assertTrue(Modifier.isPublic(currentMethod.getModifiers()), "All setters must be public!");
-			assertTrue(currentMethod.getParameterCount() == 1, "All setters have exactly 1 parameter");
+
 		}
 		
 		assertTrue(setterCount >= minSetterCount, "You need at least " + minSetterCount + " setter methods");
@@ -81,9 +82,10 @@ public class MarshmallowMonsterTest
 			if (currentMethod.getName().indexOf("get") == 0)
 			{
 				getterCount++;
+				assertTrue(currentMethod.getParameterCount() == 0, "All setters have exactly 0 parameters");
 			}
 			assertTrue(Modifier.isPublic(currentMethod.getModifiers()), "All getters must be public!");
-			assertTrue(currentMethod.getParameterCount() == 0, "All setters have exactly 0 parameters");
+
 		}
 		
 		assertTrue(getterCount >= minGetterCount, "You need at least " + minGetterCount + " getter methods");
