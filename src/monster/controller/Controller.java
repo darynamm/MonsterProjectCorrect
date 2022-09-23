@@ -1,5 +1,6 @@
 package monster.controller;
 import monster.model.MarshmallowMonster;
+import java.util.ArrayList;
 public class Controller
 {
 	private MarshmallowMonster basicMonster; 
@@ -12,13 +13,43 @@ public class Controller
 	}
 	public void start()
 	{
+		manyMonsters();
 		System.out.println("i made a monster!");
 
-		useGetters();
-		useSetters();
+	//	useGetters();
+	//	useSetters();
 
 	}
 	
+	private void manyMonsters()
+	{
+		ArrayList<MarshmallowMonster> monsterList = new ArrayList<>();
+		for (int index = 0; index < 10_000; index++)
+		{
+			MarshmallowMonster current = new MarshmallowMonster();
+			current.setName("I am monster #" + index);
+			current.setlegCount(index*3);
+			
+			monsterList.add(current);
+		}
+		
+		for (MarshmallowMonster currentMonster : monsterList)
+		{
+			if (currentMonster.getlegCount() % 17 == 4)
+					{
+							currentMonster.sethasTail(false);
+												}
+
+
+		}
+		for (MarshmallowMonster currentMonster : monsterList)
+		{
+			if (currentMonster.gethasTail())
+			{
+				System.out.println(currentMonster.getName());
+			}
+		}
+	}
 	private void useGetters()
 	{
 		System.out.println("The basic mosnter name is: " + basicMonster.getName() + " i have so many legs - a whole " + basicMonster.getlegCount() + ", also i have " + basicMonster.getspookylegCount() + " spooky legs! do i have a tail????" + basicMonster.gethasTail());
