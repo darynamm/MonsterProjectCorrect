@@ -49,7 +49,17 @@ public class Controller
 				System.out.println(currentMonster.getName());
 			}
 		}
+		MarshmallowMonster randomMonster;
+		for (int index=0; index<10; index++)
+		{
+			int randomSpot = (int) (Math.random() * monsterList.size());
+			randomMonster = monsterList.get(randomSpot);
+			System.out.println("The random spot is: " + randomSpot);
+			System.out.println("the randomMonster name is: " + randomMonster.getName());
+		}
 	}
+	
+
 	private void useGetters()
 	{
 		System.out.println("The basic mosnter name is: " + basicMonster.getName() + " i have so many legs - a whole " + basicMonster.getlegCount() + ", also i have " + basicMonster.getspookylegCount() + " spooky legs! do i have a tail????" + basicMonster.gethasTail());
